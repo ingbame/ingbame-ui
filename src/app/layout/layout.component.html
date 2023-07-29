@@ -1,3 +1,11 @@
-<app-navbar></app-navbar>
-<app-main-content></app-main-content>
-<app-footer></app-footer>
+<mat-drawer-container class="drawer-container" autosize>
+  <mat-drawer #drawer class="drawer-sidenav" mode="side">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+
+  <div class="drawer-sidenav-content">
+    <app-navbar [sideNav]="drawer"></app-navbar>
+    <app-main-content></app-main-content>
+    <app-footer></app-footer>
+  </div>
+</mat-drawer-container>

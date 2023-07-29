@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  @Input() sideNav?: MatDrawer;
 
+  constructor() {}
+
+  onMenuClick(){
+    this.sideNav?.toggle();
+  }
 }
