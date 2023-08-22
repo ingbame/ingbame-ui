@@ -1,0 +1,7 @@
+<button mat-icon-button [cdkMenuTriggerFor]="themeMenu"><i class="fa-solid fa-palette"></i></button>
+<ng-template #themeMenu>
+  <div class="nav-menu" cdkMenu>
+    <button class="nav-menu-item" cdkMenuItem (click)="changeTheme('light')">Claro</button>
+    <button class="nav-menu-item" cdkMenuItem (click)="changeTheme('dark')">Obscuro</button>
+  </div>
+</ng-template>

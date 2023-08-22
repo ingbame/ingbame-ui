@@ -1,3 +1,51 @@
-.example-spacer {
+.bg-navbar{
+  background-color: var(--bgNavColor);
+}
+.material-spacer {
   flex: 1 1 auto;
+}
+
+.nav-menu {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 180px;
+  max-width: 280px;
+  background-color: var(--bgModalColor);
+  margin-top:9px;
+  border-radius: 5%;
+  padding: 6px 0;
+}
+
+.nav-menu-item {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  user-select: none;
+  line-height: 36px;
+  padding: 0 16px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+}
+
+.nav-menu-item:hover {
+  background-color: rgb(208, 208, 208);
+}
+
+.nav-menu-item:active {
+  background-color: rgb(170, 170, 170);
+}
+
+.nav-standalone-item {
+  background-color: rgb(239, 239, 239);
+}
+.nav-standalone-item:hover {
+  background-color: rgb(208, 208, 208);
+}
+.nav-standalone-item[aria-expanded='true'] {
+  background-color: rgb(208, 208, 208);
 }

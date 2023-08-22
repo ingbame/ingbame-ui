@@ -12,6 +12,9 @@ import { RouterModule } from '@angular/router';
 import { LayoutRoutes } from '../shared/routes/layout.routing';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import {CdkMenu, CdkMenuItem, CdkMenuTrigger} from '@angular/cdk/menu';
+import { LangComponent } from './components/language/lang.component';
+import { ThemeComponent } from './components/theme/theme.component';
 
 
 @NgModule({
@@ -20,7 +23,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     NavbarComponent,
     MainContentComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    LangComponent,
+    ThemeComponent
   ],
   imports: [
     CommonModule,
@@ -28,6 +33,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,
+    CdkMenuTrigger,
+    CdkMenu,
+    CdkMenuItem,
     RouterModule.forChild(LayoutRoutes)
   ]
 })

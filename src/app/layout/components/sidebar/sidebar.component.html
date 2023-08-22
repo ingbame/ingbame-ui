@@ -1,5 +1,14 @@
-<p>Auto-resizing sidenav</p>
-<p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-<button (click)="showFiller = !showFiller" mat-raised-button>
-  Toggle extra text
-</button>
+<div class="sideBarLogo">
+  <img
+    width="150"
+    alt="Angular Logo"
+    src="../assets/img/LogoMain.png"
+  />
+</div>
+<div class="sidebar-menu primary" cdkMenu>
+  <button class="sidebar-menu-item" cdkMenuItem>Inicio</button>
+  <button class="sidebar-menu-item" cdkMenuItem>Travesía</button>
+  <button class="sidebar-menu-item" cdkMenuItem>Prácticas</button>
+  <button class="sidebar-menu-item" cdkMenuItem>Sobre mi</button>
+  <button class="sidebar-menu-item" cdkMenuItem>Social</button>
+</div>

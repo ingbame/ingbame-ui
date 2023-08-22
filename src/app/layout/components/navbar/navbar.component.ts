@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-navbar',
@@ -13,5 +14,11 @@ export class NavbarComponent {
 
   onMenuClick(){
     this.sideNav?.toggle();
+  }
+  onClickLinkedIn(){
+    window.open(environment.socialMedia.linkedIn, "_blank");
+  }
+  onClickGitHub(){
+    window.open(environment.socialMedia.gitHub, "_blank");
   }
 }

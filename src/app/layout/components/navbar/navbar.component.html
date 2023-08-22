@@ -1,18 +1,17 @@
-<mat-toolbar color="primary">
-  <img
-    width="50"
-    alt="Angular Logo"
-    src="../assets/img/logo.png"
-  />
+<mat-toolbar class="bg-navbar" color="primary">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="onMenuClick()">
-    <mat-icon>menu</mat-icon>
+    <i class="fa-solid fa-bars"></i>
   </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
+  <span>I.S.C Baruch Medina</span>
+  <span class="material-spacer"></span>
+  <span>Desarrollador .Net</span>
+  <span class="material-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" (click)="onClickLinkedIn()">
+    <i class="fa-brands fa-linkedin"></i>
   </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
+  <button mat-icon-button (click)="onClickGitHub()">
+    <i class="fa-brands fa-github"></i>
   </button>
+  <app-lang></app-lang>
+  <app-theme></app-theme>
 </mat-toolbar>
