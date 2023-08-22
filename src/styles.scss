@@ -1,4 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --light-bg-nav: #1E90FF;
+  --light-color-nav: #FFFFFF;
+  --light-bg-modal: rgba(207, 207, 207, 0.5);
+  --light-bg-main: #FFFFFF;
+  --light-bg-secundary: #e6e6e6;
+  --light-color: #000000;
 
-html, body { height: 100vh; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  --dark-bg-nav: #005cb8;
+  --dark-color-nav: #FFFFFF;
+  --dark-bg-modal: rgba(168, 168, 168, 0.5);
+  --dark-bg-main: #2b2b2b;
+  --dark-bg-secundary: #303030;
+  --dark-color: #e9e9e9;
+
+  --bgNavColor: var(--light-bg-nav);
+  --colorNav: var(--light-color-nav);
+  --bgModalColor: var(--light-bg-modal);
+  --bgMainColor: var(--light-bg-main);
+  --bgSecundaryColor: var(--light-bg-secundary);
+  --color: var(--light-color);
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
